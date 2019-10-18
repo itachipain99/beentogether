@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="CalculateViewcell1" id="gTV-IL-0wX" customClass="CalculateViewcell1" customModule="beentogetherhihi" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="552.5"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="552.5"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5r-Ud-Bfu">
+                        <rect key="frame" x="0.0" y="50" width="375" height="36"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="BOg-r6-33J">
+                        <rect key="frame" x="20" y="156" width="120.5" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cUr-Ig-d4E">
+                        <rect key="frame" x="180.5" y="159.5" width="14" height="27.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEy-hi-525">
+                        <rect key="frame" x="234.5" y="156" width="120.5" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tsg-tn-mLz">
+                        <rect key="frame" x="37.5" y="230" width="300" height="32"/>
+                        <segments>
+                            <segment title="Start from 1"/>
+                            <segment title="Start from 0"/>
+                        </segments>
+                        <color key="tintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="selectedSegmentTintColor" systemColor="systemPurpleColor" red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="changeseg:" destination="gTV-IL-0wX" eventType="valueChanged" id="ijt-QE-M5T"/>
+                        </connections>
+                    </segmentedControl>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iEy-hi-525" secondAttribute="trailing" constant="20" id="25S-MB-aPr"/>
+                <constraint firstItem="g5r-Ud-Bfu" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="AXv-wV-80a"/>
+                <constraint firstItem="BOg-r6-33J" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="20" id="EUb-Ip-mlG"/>
+                <constraint firstItem="tsg-tn-mLz" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="Fdx-7R-lMJ"/>
+                <constraint firstItem="cUr-Ig-d4E" firstAttribute="centerY" secondItem="BOg-r6-33J" secondAttribute="centerY" id="N76-j0-bdG"/>
+                <constraint firstItem="tsg-tn-mLz" firstAttribute="top" secondItem="BOg-r6-33J" secondAttribute="bottom" constant="40" id="R14-7C-uxQ"/>
+                <constraint firstItem="iEy-hi-525" firstAttribute="leading" secondItem="cUr-Ig-d4E" secondAttribute="trailing" constant="40" id="WYj-xs-Si7"/>
+                <constraint firstItem="iEy-hi-525" firstAttribute="top" secondItem="g5r-Ud-Bfu" secondAttribute="bottom" constant="70" id="ZtP-0v-qoy"/>
+                <constraint firstItem="g5r-Ud-Bfu" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="fN3-Px-WCw"/>
+                <constraint firstItem="cUr-Ig-d4E" firstAttribute="leading" secondItem="BOg-r6-33J" secondAttribute="trailing" constant="40" id="hcj-8k-WpO"/>
+                <constraint firstItem="g5r-Ud-Bfu" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="50" id="pnX-cL-LFt"/>
+                <constraint firstItem="cUr-Ig-d4E" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="qec-MK-f1g"/>
+                <constraint firstItem="tsg-tn-mLz" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.8" id="waS-HN-lp4"/>
+                <constraint firstItem="BOg-r6-33J" firstAttribute="top" secondItem="g5r-Ud-Bfu" secondAttribute="bottom" constant="70" id="y0S-EA-eDh"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <connections>
+                <outlet property="label_cell1" destination="g5r-Ud-Bfu" id="FIU-hO-0D7"/>
+                <outlet property="segday" destination="tsg-tn-mLz" id="MA1-qb-DYR"/>
+                <outlet property="textdate_cell1" destination="BOg-r6-33J" id="jRG-xs-dlj"/>
+                <outlet property="textdays_cell1" destination="iEy-hi-525" id="5YT-lX-weT"/>
+            </connections>
+            <point key="canvasLocation" x="138.40579710144928" y="105.46875"/>
+        </collectionViewCell>
+    </objects>
+</document>
