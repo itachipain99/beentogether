@@ -1,3 +1,8 @@
-{
-    "password" : "huonghieu",
+[
+    {
+        "password" : "huonghieu"
+},
+    {
+        "password" : "123456"
 }
+]

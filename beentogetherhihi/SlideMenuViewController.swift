@@ -11,8 +11,10 @@ import UIKit
 class SlideMenuViewController2: UIViewController {
 
     @IBOutlet weak var tableviewLeft: UITableView!
+    
     let arrLeft = ["Been Together","Calculate Date","Themes","Get Free Photobook"]
     let arrman = ["MainViewController","manCalculate","manThemes"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableviewLeft.dataSource = self

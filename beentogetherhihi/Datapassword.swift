@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+class password : NSObject,Codable{
+    var password : String?
+}

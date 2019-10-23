@@ -10,11 +10,24 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
+    var window: UIWindow?
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        let sb = UIStoryboard.init(name: "Main", bundle: nil)
+        let lauchbefore = UserDefaults.standard.bool(forKey: "lauchbefore")
         // Override point for customization after application launch.
+        if lauchbefore{
+            let controller = sb.instantiateViewController(withIdentifier: "ViewController") as! ViewController
+            UserDefaults.standard.set(false, forKey: "lauchbefore")
+            self.window?.rootViewController = controller
+            self.window?.makeKeyAndVisible()
+        }
+        else {
+            let controller = sb.instantiateViewController(withIdentifier: "SlideMenu") as! SlideMenu
+            self.window?.rootViewController = controller
+            self.window?.makeKeyAndVisible()
+        }
         return true
     }
 

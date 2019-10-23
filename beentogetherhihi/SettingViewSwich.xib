@@ -25,6 +25,9 @@
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCg-hx-SAh">
                         <rect key="frame" x="256" y="6.5" width="51" height="31"/>
                         <color key="onTintColor" red="0.97963892490000004" green="0.46368452249999997" blue="0.03302870259" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <connections>
+                            <action selector="segechange:" destination="KGk-i7-Jjw" eventType="valueChanged" id="bXh-Qd-3Wl"/>
+                        </connections>
                     </switch>
                 </subviews>
                 <constraints>
@@ -38,7 +41,7 @@
             <connections>
                 <outlet property="label_title" destination="I5d-TG-QWn" id="9Bt-jK-h94"/>
             </connections>
-            <point key="canvasLocation" x="139" y="87"/>
+            <point key="canvasLocation" x="137.68115942028987" y="86.383928571428569"/>
         </tableViewCell>
     </objects>
 </document>

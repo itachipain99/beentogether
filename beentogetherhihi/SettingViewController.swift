@@ -16,9 +16,7 @@ class SettingViewController: UIViewController {
     let arrselection = ["Name","Date Settings","Background Image","Display","App Settings"]
     let arrcell = [["Person 1","Person 2","Change Title","Change Bottom text"],["Start date","Start from Zero","Show Year, Month, Days"],["Background Image"],["Name Text Color","Day Text Color","Bar Color","Language","Show Bottom Bar","Font"],["Badge","Use passcode lock"]]
     
-    let appearance = SCLAlertView.SCLAppearance(
-            showCloseButton : false
-    )
+    let appearance = SCLAlertView.SCLAppearance(showCloseButton : false)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -90,9 +88,7 @@ extension SettingViewController : UITableViewDataSource{
                 }
                 de.hideView()
             }
-            de.addButton("Cancel"){
-                de.hideView()
-            }
+            de.addButton("Cancel"){de.hideView()}
             de.showInfo(texttitle, subTitle: "")
         case "Person 2":
             textdata = ci!.nameperson2!
@@ -104,9 +100,7 @@ extension SettingViewController : UITableViewDataSource{
                     self.tableviewsetting.reloadRows(at: [indexpath], with: .automatic)
                 }
             }
-            de.addButton("Cancel"){
-                de.hideView()
-            }
+            de.addButton("Cancel"){de.hideView()}
             de.showInfo(texttitle, subTitle: "")
         case "Change Title":
             textdata = ci!.changetitle!
@@ -118,9 +112,7 @@ extension SettingViewController : UITableViewDataSource{
                     self.tableviewsetting.reloadRows(at: [indexpath], with: .automatic)
                 }
             }
-            de.addButton("Cancel"){
-                de.hideView()
-            }
+            de.addButton("Cancel"){de.hideView()}
             de.showInfo(texttitle, subTitle: "")
         case "Change Bottom text":
             textdata = ci!.changeBottom!
@@ -129,20 +121,23 @@ extension SettingViewController : UITableViewDataSource{
             de.addButton("OK"){
                 if !textff.text!.isEmpty {
                     ci?.changeBottom = textff.text!
-                self.tableviewsetting.reloadRows(at: [indexpath], with: .automatic)
+                    self.tableviewsetting.reloadRows(at: [indexpath], with: .automatic)
                 }
             }
-            de.addButton("Cancel"){
-                    de.hideView()
-            }
+            de.addButton("Cancel"){de.hideView()}
             de.showInfo(texttitle, subTitle: "")
         case "Background Image":
-            de.addButton("Change",backgroundColor: .blue){
-                   }
+            de.addButton("Change",backgroundColor: .blue){}
             de.addButton("Delete Background",backgroundColor: .orange){}
             de.addButton("Cancel",backgroundColor: .orange){}
             de.showInfo("Background Image", subTitle: "", circleIconImage: UIImage.init(named: "ico_photo"))
             de.showInfo(texttitle, subTitle: "")
+        case "Use passcode lock":
+            if ci!.passswich == 1 {
+                let sb = UIStoryboard.init(name: "Main", bundle: nil)
+                let sp = sb.instantiateViewController(withIdentifier: "ManLockViewController") as? ManLockViewController
+                self.present(sp!,animated: true,completion: nil)
+            }
         default:
             texttitle = ""
         }

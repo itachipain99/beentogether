@@ -18,10 +18,7 @@ class MainViewController : UIViewController {
     @IBOutlet weak var label_title: UILabel!
     @IBOutlet weak var label_bottom: UILabel!
     
-    
-    let appearance = SCLAlertView.SCLAppearance(
-         showCloseButton : false
-     )
+    let appearance = SCLAlertView.SCLAppearance(showCloseButton : false)
     
     override func viewWillAppear(_ animated: Bool) {
         label_days.text = "\(ci!.daylove!) days"
@@ -43,13 +40,11 @@ class MainViewController : UIViewController {
 //        let sb = UIStoryboard.init(name: "Main", bundle: nil)
 //        let sp = sb.instantiateViewController(withIdentifier: "SettingViewController") as? SettingViewController
 //        self.present(sp!,animated: true,completion: nil)
-        
     }
     
     @IBAction func but_changebackground(_ sender: Any) {
         let de = SCLAlertView(appearance: appearance)
-        de.addButton("Change",backgroundColor: .blue){
-        }
+        de.addButton("Change",backgroundColor: .blue){}
         de.addButton("Delete Background",backgroundColor: .orange){}
         de.addButton("Cancel",backgroundColor: .orange){}
         de.showInfo("Background Image", subTitle: "", circleIconImage: UIImage.init(named: "ico_photo"))
@@ -72,9 +67,7 @@ class MainViewController : UIViewController {
             }
             de.hideView()
         }
-        de.addButton("Cancel"){
-            de.hideView()
-        }
+        de.addButton("Cancel"){de.hideView()}
         de.showInfo("Name", subTitle: "Person 1")
 //        SCLAlertView.addTextField(title : "Enter name person1")
     }
@@ -89,16 +82,8 @@ class MainViewController : UIViewController {
             }
             alert.hideView()
         }
-        alert.addButton("Cancel"){
-            alert.hideView()
-        }
+        alert.addButton("Cancel"){alert.hideView()}
         alert.showInfo("Name", subTitle: "Person 2")
-    }
-}
-
-extension MainViewController : DayLove {
-    func PushDay(dayoflove: Int) {
-        label_days.text = "\(dayoflove)"
     }
 }
 

@@ -17,23 +17,23 @@ class LeftTableViewCell: UITableViewCell {
         // Initialization code
     }
         
-
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         
         // Configure the view for the selected state
     }
+    
     func initCell (label : String) -> Void{
         label_left.text = label
         switch label {
-        case "Been Together":
-            imageleft.image = UIImage(named: "ico_heart")
-        case "Calculate Date":
-            imageleft.image = UIImage(named: "ico_event")
-        case "Themes":
-            imageleft.image = UIImage(named: "ico_photolib")
-        default:
-            imageleft.image = UIImage(named: "ico_photolib")
+            case "Been Together":
+                imageleft.image = UIImage(named: "ico_heart")
+            case "Calculate Date":
+                imageleft.image = UIImage(named: "ico_event")
+            case "Themes":
+                imageleft.image = UIImage(named: "ico_photolib")
+            default:
+                imageleft.image = UIImage(named: "ico_photolib")
         }
     }
 }

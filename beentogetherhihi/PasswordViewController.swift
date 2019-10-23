@@ -10,21 +10,26 @@ import UIKit
 
 class PasswordViewController: UIViewController {
 
+    @IBOutlet weak var textpass: UITextField!
+    @IBOutlet weak var textpassrepeat: UITextField!
+    @IBOutlet weak var label_warning: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func but_Go(_ sender: Any) {
+        if textpass.text!.isEmpty || textpassrepeat.text!.isEmpty{
+            label_warning.text = "Mời nhập đầy đủ thông tin"
+        }
+        else{
+            if textpass.text != textpassrepeat.text{
+                label_warning.text = "Sai mật khẩu nhập lại"
+            }
+            else{
+                self.dismiss(animated: true, completion: nil)
+            }
+        }
     }
-    */
-
 }

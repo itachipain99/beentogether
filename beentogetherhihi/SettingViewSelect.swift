@@ -22,40 +22,39 @@ class SettingViewSelect: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
     }
     func setlabel(label : String) -> Void{
         label_title.text = label
         var textData = ""
         switch label {
-        case "Person 1":
-            textData = ci!.nameperson1!
-        case "Person 2":
-            textData = ci!.nameperson2!
-        case "Change Title":
-            textData = ci!.changetitle!
-        case "Change Bottom text":
-            textData = ci!.changeBottom!
-        case "Start date":
-             let currentdate = ci!.datepicker!
-             let dateformater = DateFormatter()
-             dateformater.dateFormat = "MMM dd,yyyy"
-             let dateString = dateformater.string(from: currentdate)
-            textData = dateString
-        case "Background Image":
-            textData = "Change"
-        case "Name Text Color":
-            textData = "Name Text Color"
-        case "Day Text Color":
-            textData = "Day Text Color"
-        case "Bar Color":
-            textData = "Bar Color"
-        case "Language":
-            textData = "System Language"
-        case "Font":
-            textData = "Nanum Pen Script OTF"
-        default:
-            textData = ""
+            case "Person 1":
+                textData = ci!.nameperson1!
+            case "Person 2":
+                textData = ci!.nameperson2!
+            case "Change Title":
+                textData = ci!.changetitle!
+            case "Change Bottom text":
+                textData = ci!.changeBottom!
+            case "Start date":
+                let currentdate = ci!.datepicker!
+                let dateformater = DateFormatter()
+                dateformater.dateFormat = "MMM dd,yyyy"
+                let dateString = dateformater.string(from: currentdate)
+                textData = dateString
+            case "Background Image":
+                textData = "Change"
+            case "Name Text Color":
+                textData = "Name Text Color"
+            case "Day Text Color":
+                textData = "Day Text Color"
+            case "Bar Color":
+                textData = "Bar Color"
+            case "Language":
+                textData = "System Language"
+            case "Font":
+                textData = "Nanum Pen Script OTF"
+            default:
+                textData = ""
         }
         labeluse.text = textData
     }

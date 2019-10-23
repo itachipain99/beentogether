@@ -23,17 +23,18 @@ class ThemesViewcell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
     func initcellThemes(label : String) -> Void{
         label_Themes.text = label
         switch label {
-        case "BeenTogether 2018":
-            imageThemes.image = UIImage(named: "ico_event")
-        case "BeenTogether 2017":
-            imageThemes.image = UIImage(named: "ico_heart")
-        case "BeenTogether 2016":
-            imageThemes.image = UIImage(named: "ico_menu")
-        default:
-            imageThemes.image = UIImage(named: "ico_share")
+            case "BeenTogether 2018":
+                imageThemes.image = UIImage(named: "ico_event")
+            case "BeenTogether 2017":
+                imageThemes.image = UIImage(named: "ico_heart")
+            case "BeenTogether 2016":
+                imageThemes.image = UIImage(named: "ico_menu")
+            default:
+                imageThemes.image = UIImage(named: "ico_share")
         }
     }
 }

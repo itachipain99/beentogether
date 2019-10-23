@@ -12,6 +12,7 @@ class SettingViewSwich: UITableViewCell {
 
     @IBOutlet weak var label_title: UILabel!
     
+   
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,7 +23,17 @@ class SettingViewSwich: UITableViewCell {
         
         // Configure the view for the selected state
     }
+    
     func settitle(label : String) -> Void {
         label_title.text = label
+    }
+    
+    @IBAction func segechange(_ sender: UISwitch) {
+        if sender.isOn {
+            ci!.passswich = 1
+        }
+        else {
+            ci!.passswich = 0
+        }
     }
 }

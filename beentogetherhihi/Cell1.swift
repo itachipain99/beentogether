@@ -15,5 +15,6 @@ struct daystart {
     var nameperson2 : String?
     var changetitle : String?
     var changeBottom : String?
-    
+    var passswich : Int?
+    var password : String?
 }

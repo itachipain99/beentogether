@@ -26,7 +26,6 @@
 		1519DFA52351CB8E0039E2A3 /* CalculateViewcell1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1519DFA32351CB8E0039E2A3 /* CalculateViewcell1.xib */; };
 		1519DFA92351CFC10039E2A3 /* CalculateViewcell2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519DFA72351CFC10039E2A3 /* CalculateViewcell2.swift */; };
 		1519DFAA2351CFC10039E2A3 /* CalculateViewcell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1519DFA82351CFC10039E2A3 /* CalculateViewcell2.xib */; };
-		151EEB7523559A88008B8182 /* DayLove.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151EEB7423559A88008B8182 /* DayLove.swift */; };
 		1536BC652345127300E2F5C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536BC642345127300E2F5C3 /* AppDelegate.swift */; };
 		1536BC672345127300E2F5C3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536BC662345127300E2F5C3 /* SceneDelegate.swift */; };
 		1536BC692345127300E2F5C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1536BC682345127300E2F5C3 /* ViewController.swift */; };
@@ -39,6 +38,11 @@
 		156C89EF23595EC3003E3E42 /* SettingViewSelect.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156C89ED23595EC3003E3E42 /* SettingViewSelect.xib */; };
 		156C89F223595EE0003E3E42 /* SettingViewSwich.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156C89F023595EE0003E3E42 /* SettingViewSwich.swift */; };
 		156C89F323595EE0003E3E42 /* SettingViewSwich.xib in Resources */ = {isa = PBXBuildFile; fileRef = 156C89F123595EE0003E3E42 /* SettingViewSwich.xib */; };
+		1574D37F235F57DF00147137 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1574D37E235F57DF00147137 /* PasswordViewController.swift */; };
+		1574D383235F769C00147137 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 1574D382235F769C00147137 /* data.json */; };
+		15ABF34923605CE4009F256B /* Datapassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABF34823605CE4009F256B /* Datapassword.swift */; };
+		15ABF34B23605D3B009F256B /* Readdatajson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABF34A23605D3B009F256B /* Readdatajson.swift */; };
+		15ABF34F23606A2A009F256B /* ManLockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15ABF34E23606A2A009F256B /* ManLockViewController.swift */; };
 		15BC837D234B2ABA003E039F /* SlideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BC837C234B2ABA003E039F /* SlideMenu.swift */; };
 		15E14E1D2349090800F4A882 /* SlideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E14E1B2349090800F4A882 /* SlideMenuViewController.swift */; };
 		86725442956893790129D92C /* Pods_beentogetherhihi.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F6B9D5F9A54F6BE3D5ABB03 /* Pods_beentogetherhihi.framework */; };
@@ -64,7 +68,6 @@
 		1519DFA32351CB8E0039E2A3 /* CalculateViewcell1.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculateViewcell1.xib; sourceTree = "<group>"; };
 		1519DFA72351CFC10039E2A3 /* CalculateViewcell2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculateViewcell2.swift; sourceTree = "<group>"; };
 		1519DFA82351CFC10039E2A3 /* CalculateViewcell2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CalculateViewcell2.xib; sourceTree = "<group>"; };
-		151EEB7423559A88008B8182 /* DayLove.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayLove.swift; sourceTree = "<group>"; };
 		1536BC612345127300E2F5C3 /* beentogetherhihi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beentogetherhihi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1536BC642345127300E2F5C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1536BC662345127300E2F5C3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +82,11 @@
 		156C89ED23595EC3003E3E42 /* SettingViewSelect.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewSelect.xib; sourceTree = "<group>"; };
 		156C89F023595EE0003E3E42 /* SettingViewSwich.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewSwich.swift; sourceTree = "<group>"; };
 		156C89F123595EE0003E3E42 /* SettingViewSwich.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewSwich.xib; sourceTree = "<group>"; };
+		1574D37E235F57DF00147137 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		1574D382235F769C00147137 /* data.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		15ABF34823605CE4009F256B /* Datapassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Datapassword.swift; sourceTree = "<group>"; };
+		15ABF34A23605D3B009F256B /* Readdatajson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Readdatajson.swift; sourceTree = "<group>"; };
+		15ABF34E23606A2A009F256B /* ManLockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManLockViewController.swift; sourceTree = "<group>"; usesTabs = 0; };
 		15BC837C234B2ABA003E039F /* SlideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenu.swift; sourceTree = "<group>"; };
 		15E14E1B2349090800F4A882 /* SlideMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideMenuViewController.swift; sourceTree = "<group>"; };
 		2F6B9D5F9A54F6BE3D5ABB03 /* Pods_beentogetherhihi.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beentogetherhihi.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -157,9 +165,9 @@
 				1536BC642345127300E2F5C3 /* AppDelegate.swift */,
 				1536BC662345127300E2F5C3 /* SceneDelegate.swift */,
 				1536BC682345127300E2F5C3 /* ViewController.swift */,
-				151EEB7423559A88008B8182 /* DayLove.swift */,
 				1504AFE42345F5330093F089 /* MainViewController.swift */,
 				1536BC6A2345127300E2F5C3 /* Main.storyboard */,
+				15ABF35023606A4B009F256B /* lockview */,
 				1547B3C623544708004C908A /* SettingViewController.swift */,
 				156C89EB23595E73003E3E42 /* settingView */,
 				151EEB7623559BE9008B8182 /* CollectionView */,
@@ -173,6 +181,7 @@
 				1536BC6D2345127400E2F5C3 /* Assets.xcassets */,
 				1536BC6F2345127400E2F5C3 /* LaunchScreen.storyboard */,
 				1536BC722345127400E2F5C3 /* Info.plist */,
+				1574D382235F769C00147137 /* data.json */,
 				1504AFD92345DE3B0093F089 /* Cell1.swift */,
 			);
 			path = beentogetherhihi;
@@ -187,6 +196,17 @@
 				156C89F123595EE0003E3E42 /* SettingViewSwich.xib */,
 			);
 			name = settingView;
+			sourceTree = "<group>";
+		};
+		15ABF35023606A4B009F256B /* lockview */ = {
+			isa = PBXGroup;
+			children = (
+				15ABF34E23606A2A009F256B /* ManLockViewController.swift */,
+				1574D37E235F57DF00147137 /* PasswordViewController.swift */,
+				15ABF34A23605D3B009F256B /* Readdatajson.swift */,
+				15ABF34823605CE4009F256B /* Datapassword.swift */,
+			);
+			name = lockview;
 			sourceTree = "<group>";
 		};
 		15FF18E62350251700C64741 /* LeftTableViewCell */ = {
@@ -278,6 +298,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1505354C235305A400EFB93E /* ThemesViewcell.xib in Resources */,
+				1574D383235F769C00147137 /* data.json in Resources */,
 				15011472234FA42200FA9B65 /* LeftTableViewCell.xib in Resources */,
 				1536BC712345127400E2F5C3 /* LaunchScreen.storyboard in Resources */,
 				156C89EF23595EC3003E3E42 /* SettingViewSelect.xib in Resources */,
@@ -348,16 +369,19 @@
 				1519DFA42351CB8E0039E2A3 /* CalculateViewcell1.swift in Sources */,
 				1547B3C723544708004C908A /* SettingViewController.swift in Sources */,
 				1536BC692345127300E2F5C3 /* ViewController.swift in Sources */,
+				15ABF34F23606A2A009F256B /* ManLockViewController.swift in Sources */,
 				150535502353147E00EFB93E /* LabelThemesCell.swift in Sources */,
 				1505354B235305A400EFB93E /* ThemesViewcell.swift in Sources */,
 				1501E26A2350929600C44117 /* CalculateViewController.swift in Sources */,
-				151EEB7523559A88008B8182 /* DayLove.swift in Sources */,
+				15ABF34923605CE4009F256B /* Datapassword.swift in Sources */,
+				15ABF34B23605D3B009F256B /* Readdatajson.swift in Sources */,
 				1536BC652345127300E2F5C3 /* AppDelegate.swift in Sources */,
 				156C89F223595EE0003E3E42 /* SettingViewSwich.swift in Sources */,
 				15011471234FA42200FA9B65 /* LeftTableViewCell.swift in Sources */,
 				15E14E1D2349090800F4A882 /* SlideMenuViewController.swift in Sources */,
 				1519DFA92351CFC10039E2A3 /* CalculateViewcell2.swift in Sources */,
 				1501E2682350927900C44117 /* ThemesViewController.swift in Sources */,
+				1574D37F235F57DF00147137 /* PasswordViewController.swift in Sources */,
 				156C89EE23595EC3003E3E42 /* SettingViewSelect.swift in Sources */,
 				1536BC672345127300E2F5C3 /* SceneDelegate.swift in Sources */,
 				1504AFDA2345DE3B0093F089 /* Cell1.swift in Sources */,
